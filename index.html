@@ -1,0 +1,748 @@
+<!DOCTYPE html>
+
+<html lang="de-DE">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="Kontaktieren Sie uns für Ihre Autovermietung in Rudolstadt. Wir helfen Ihnen gerne weiter."
+        name="description" />
+    <meta content="Kontakt, Autovermietung Kontakt, Anfrage, Rudolstadt" name="keywords" />
+    <meta content="Kontakt - Autovermietung Rudolstadt" property="og:title" />
+    <meta content="Kontaktieren Sie uns für Ihre Autovermietung in Rudolstadt." property="og:description" />
+    <meta content="website" property="og:type" />
+    <meta content="https://cartop.com/kontakt/" property="og:url" />
+    <meta content="https://cartop.com/images/logo.jpg" property="og:image" />
+    <meta content="summary_large_image" name="twitter:card" />
+    <meta content="Kontakt - Autovermietung Rudolstadt" name="twitter:title" />
+    <meta content="Kontaktieren Sie uns für Ihre Autovermietung in Rudolstadt." name="twitter:description" />
+    <meta content="https://cartop.com/images/logo.jpg" name="twitter:image" />
+    <link href="../images/logo.jpg" rel="icon" type="image/jpeg" />
+    <title>Kontakt - Autovermietung Rudolstadt</title>
+    <meta content="index, follow" name="robots" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #b8c6d8 0%, #8a9fb3 100%);
+            color: #1a1a2e;
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(135deg, #c0c8d1 0%, #a8b5c4 100%);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            border-bottom: 3px solid #1e3a5f;
+        }
+
+        nav {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 2rem;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .logo img {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            border: 3px solid #1e3a5f;
+        }
+
+        .logo h1 {
+            font-size: 1.8rem;
+            color: #1e3a5f;
+            font-weight: 700;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #1e3a5f;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+        }
+
+        .nav-links a:hover {
+            background-color: #1e3a5f;
+            color: #c0c8d1;
+            transform: translateY(-2px);
+        }
+
+        .page-header {
+            background: linear-gradient(rgba(30, 58, 95, 0.8), rgba(30, 58, 95, 0.8)), url("../images/4.jpg") center/cover;
+            color: white;
+            text-align: center;
+            padding: 80px 2rem;
+            margin-bottom: 3rem;
+        }
+
+        .page-header h2 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        .page-header p {
+            font-size: 1.3rem;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .contact-wrapper {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            margin-bottom: 3rem;
+        }
+
+        .contact-form {
+            background: white;
+            padding: 3rem;
+            border-radius: 15px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+            border-top: 4px solid #1e3a5f;
+        }
+
+        .contact-form h3 {
+            color: #1e3a5f;
+            font-size: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-group label {
+            display: block;
+            color: #1e3a5f;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 12px;
+            border: 2px solid #c0c8d1;
+            border-radius: 8px;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: #1e3a5f;
+            box-shadow: 0 0 10px rgba(30, 58, 95, 0.1);
+        }
+
+        .form-group textarea {
+            resize: vertical;
+            min-height: 150px;
+        }
+
+        .submit-btn {
+            background-color: #1e3a5f;
+            color: white;
+            padding: 15px 40px;
+            border: none;
+            border-radius: 30px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            width: 100%;
+        }
+
+        .submit-btn:hover {
+            background-color: #2d5a8f;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .contact-info {
+            background: white;
+            padding: 3rem;
+            border-radius: 15px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+            border-top: 4px solid #1e3a5f;
+        }
+
+        .contact-info h3 {
+            color: #1e3a5f;
+            font-size: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .info-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+            padding: 1.5rem;
+            background: #f8f9fa;
+            border-radius: 10px;
+            transition: all 0.3s ease;
+        }
+
+        .info-item:hover {
+            background: #e8eef5;
+            transform: translateX(5px);
+        }
+
+        .info-item i {
+            font-size: 2rem;
+            color: #1e3a5f;
+            min-width: 40px;
+        }
+
+        .info-content h4 {
+            color: #1e3a5f;
+            margin-bottom: 0.5rem;
+            font-size: 1.2rem;
+        }
+
+        .info-content p {
+            color: #555;
+            line-height: 1.8;
+        }
+
+        .info-content a {
+            color: #2d5a8f;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .info-content a:hover {
+            color: #1e3a5f;
+        }
+
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 3000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.6);
+            animation: fadeIn 0.3s ease;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        .modal-content {
+            background: white;
+            margin: 10% auto;
+            padding: 3rem;
+            border-radius: 15px;
+            width: 90%;
+            max-width: 500px;
+            text-align: center;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+            animation: slideDown 0.4s ease;
+        }
+
+        @keyframes slideDown {
+            from {
+                transform: translateY(-50px);
+                opacity: 0;
+            }
+
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        .modal-content i {
+            font-size: 2rem;
+            color: #1e3a5f;
+            margin-bottom: 1rem;
+        }
+
+        .modal-content h3 {
+            color: #1e3a5f;
+            margin-bottom: 1rem;
+            font-size: 2rem;
+        }
+
+        .modal-content p {
+            color: #555;
+            margin-bottom: 2rem;
+            font-size: 1.1rem;
+        }
+
+        .close-modal {
+            background-color: #1e3a5f;
+            color: white;
+            padding: 12px 30px;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            font-size: 1rem;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        /* --------------------- */
+        .close-modal i {
+            color: white;
+            font-size: 16px;
+            margin-bottom: 0px;
+        }
+
+        /* --------------------- */
+        .close-modal:hover {
+            background-color: #2d5a8f;
+            transform: scale(1.05);
+        }
+
+        footer {
+            background: linear-gradient(135deg, #1e3a5f 0%, #2d5a8f 100%);
+            color: white;
+            padding: 3rem 2rem;
+            margin-top: 4rem;
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+
+        .footer-section h3 {
+            margin-bottom: 1.5rem;
+            color: #c0c8d1;
+            font-size: 1.3rem;
+        }
+
+        .footer-section p,
+        .footer-section a {
+            color: #e8eef5;
+            text-decoration: none;
+            display: block;
+            margin-bottom: 0.8rem;
+            transition: color 0.3s ease;
+        }
+
+        .footer-section a:hover {
+            color: #c0c8d1;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            margin-top: 2rem;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .cookie-banner {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(135deg, #1e3a5f 0%, #2d5a8f 100%);
+            color: white;
+            padding: 2rem;
+            box-shadow: 0 -5px 20px rgba(0, 0, 0, 0.3);
+            display: none;
+            z-index: 2000;
+            animation: slideUp 0.5s ease;
+        }
+
+        @keyframes slideUp {
+            from {
+                transform: translateY(100%);
+            }
+
+            to {
+                transform: translateY(0);
+            }
+        }
+
+        .cookie-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .cookie-text {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        .cookie-text h4 {
+            margin-bottom: 0.5rem;
+            font-size: 1.3rem;
+        }
+
+        .cookie-buttons {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .cookie-btn {
+            padding: 10px 25px;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            font-size: 1rem;
+        }
+
+        .cookie-accept {
+            background-color: #c0c8d1;
+            color: #1e3a5f;
+        }
+
+        .cookie-accept:hover {
+            background-color: #a8b5c4;
+            transform: scale(1.05);
+        }
+
+        .cookie-decline {
+            background-color: transparent;
+            color: white;
+            border: 2px solid white;
+        }
+
+        .cookie-decline:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+
+        @media (max-width: 968px) {
+            .contact-wrapper {
+                grid-template-columns: 1fr;
+            }
+
+            .nav-links {
+                flex-direction: column;
+                gap: 1rem;
+            }
+
+            .page-header h2 {
+                font-size: 2rem;
+            }
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            word-break: break-word;
+        }
+
+        /* Mobile Horizontal Scroll Fix */
+        html,
+        body {
+            overflow-x: hidden !important;
+            max-width: 100% !important;
+        }
+
+        * {
+            box-sizing: border-box !important;
+        }
+
+        /* Responsive Grid Fixes */
+        @media (max-width: 768px) {
+
+            .contact-container,
+            .contact-wrapper {
+                grid-template-columns: 1fr !important;
+                gap: 20px !important;
+            }
+
+            .contact-info,
+            .contact-form,
+            .contact-form-section,
+            .contact-info-section {
+                padding: 0px !important;
+                margin: 10px 0 !important;
+            }
+
+            .container,
+            .content {
+                padding: 0 15px !important;
+                max-width: 100% !important;
+            }
+
+            nav {
+                flex-direction: column !important;
+                gap: 10px !important;
+            }
+
+            nav ul {
+                flex-direction: column !important;
+                gap: 10px !important;
+            }
+
+            .footer-content {
+                grid-template-columns: 1fr !important;
+                gap: 20px !important;
+            }
+
+            /* Fix for wide elements */
+            img,
+            table,
+            iframe {
+                max-width: 100% !important;
+                height: auto !important;
+            }
+
+            /* Fix for text overflow */
+            h1,
+            h2,
+            h3,
+            h4,
+            h5,
+            h6 {
+                word-wrap: break-word !important;
+                word-break: break-word !important;
+                hyphens: auto !important;
+            }
+
+            /* Fix for form elements */
+            input,
+            textarea,
+            select {
+                max-width: 100% !important;
+                width: 100% !important;
+            }
+        }
+
+        @media (max-width: 480px) {
+
+            .contact-info,
+            .contact-form,
+            .contact-form-section,
+            .contact-info-section {
+                margin: 5px 0 !important;
+            }
+
+            .container,
+            .content {
+                padding: 0 10px !important;
+            }
+        }
+    </style>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "ContactPage",
+        "name": "Kontakt - Autovermietung Rudolstadt",
+        "description": "Kontaktieren Sie uns für Ihre Autovermietung",
+        "url": "https://cartop.com/kontakt/"
+    }
+    </script>
+    <link href="https://cartop.com/kontakt/" rel="canonical" />
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img alt="Logo" src="../images/logo.jpg" />
+                <h1>AutoRent</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="/"><i class="fas fa-home"></i> Startseite</a></li>
+                <li><a href="/online-tagebuch/"><i class="fas fa-blog"></i> Blog</a></li>
+                <li><a href="/organisation/"><i class="fas fa-users"></i> Über uns</a></li>
+                <li><a href="/kontakt/"><i class="fas fa-envelope"></i> Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="page-header">
+        <h2><i class="fas fa-envelope"></i> Kontaktieren Sie uns</h2>
+        <p>Wir freuen uns auf Ihre Nachricht</p>
+    </section>
+    <div class="container">
+        <div class="contact-wrapper">
+            <div class="contact-form">
+                <h3><i class="fas fa-paper-plane"></i> Senden Sie uns eine Nachricht</h3>
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label for="name"><i class="fas fa-user"></i> Name *</label>
+                        <input id="name" name="name" required="" type="text" />
+                    </div>
+                    <div class="form-group">
+                        <label for="email"><i class="fas fa-envelope"></i> E-Mail *</label>
+                        <input id="email" name="email" required="" type="email" pattern="[^@]+@[^@]+\.[a-zA-Z]{2,6}" />
+                    </div>
+                    <div class="form-group">
+                        <label for="phone"><i class="fas fa-phone"></i> Telefon</label>
+                        <input id="phone" name="phone" required type="tel" pattern="^\+?[0-9]{9,15}$" />
+                    </div>
+                    <div class="form-group">
+                        <label for="message"><i class="fas fa-comment"></i> Ihre Nachricht *</label>
+                        <textarea id="message" name="message" required=""></textarea>
+                    </div>
+                    <button class="submit-btn" type="submit">
+                        <i class="fas fa-paper-plane"></i> Nachricht senden
+                    </button>
+                </form>
+            </div>
+            <div class="contact-info">
+                <h3><i class="fas fa-info-circle"></i> Kontaktinformationen</h3>
+                <div class="info-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div class="info-content">
+                        <h4>Adresse</h4>
+                        <p>Lena-Hirsch-Weg 1a<br />31176 Rudolstadt<br />Germany</p>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-phone"></i>
+                    <div class="info-content">
+                        <h4>Telefon</h4>
+                        <p><a href="tel:+4941654881023">+49 41654 881023</a></p>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-envelope"></i>
+                    <div class="info-content">
+                        <h4>E-Mail</h4>
+                        <p><a href="mailto:maximzokyt@hotmail.com">maximzokyt@hotmail.com</a></p>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-clock"></i>
+                    <div class="info-content">
+                        <h4>Öffnungszeiten</h4>
+                        <p>Montag - Freitag: 08:00 - 18:00 Uhr<br />
+                            Samstag: 09:00 - 14:00 Uhr<br />
+                            Sonntag: Geschlossen</p>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-id-card"></i>
+                    <div class="info-content">
+                        <h4>Registrierungsnummer</h4>
+                        <p>62806674</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal" id="thankYouModal">
+        <div class="modal-content">
+            <i class="fas fa-check-circle"></i>
+            <h3>Vielen Dank!</h3>
+            <p>Ihre Nachricht wurde erfolgreich gesendet. Wir werden uns so schnell wie möglich bei Ihnen melden.</p>
+            <button class="close-modal">
+                <i class="fas fa-times"></i> Schließen
+            </button>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3><i class="fas fa-info-circle"></i> Über uns</h3>
+                <p>Wir sind Ihr zuverlässiger Partner für Autovermietung in Rudolstadt und Umgebung. Seit vielen Jahren
+                    bieten wir erstklassigen Service.</p>
+            </div>
+            <div class="footer-section">
+                <h3><i class="fas fa-map-marker-alt"></i> Kontakt</h3>
+                <p><i class="fas fa-home"></i> Lena-Hirsch-Weg 1a<br />31176 Rudolstadt, Germany</p>
+                <p><i class="fas fa-phone"></i> +4941654881023</p>
+                <p>maximzokyt@hotmail.com</p>
+                <p><a href="https://wa.me/4941654881023">WhatsApp</a></p>
+                <p><a href="https://viber.me/4941654881023">Viber</a></p>
+                <p><a href="https://www.instagram.com/accounts/login/" rel="noopener noreferrer"
+                        target="_blank">Instagram</a></p>
+                <p><a href="https://www.facebook.com/" rel="noopener noreferrer" target="_blank">Facebook</a></p>
+                <p><i class="fas fa-id-card"></i> Reg.-Nr.: 62806674</p>
+            </div>
+            <div class="footer-section">
+                <h3><i class="fas fa-link"></i> Rechtliches</h3>
+                <a href="/datenrichtlinie/"><i class="fas fa-shield-alt"></i> Datenschutzerklärung</a>
+                <a href="/richtlinien/"><i class="fas fa-file-contract"></i> AGB</a>
+                <a href="/geld-zuruck/"><i class="fas fa-undo"></i> Widerrufsbelehrung</a>
+            </div>
+            <div class="footer-section">
+                <h3><i class="fas fa-clock"></i> Öffnungszeiten</h3>
+                <p>Mo-Fr: 08:00 - 18:00 Uhr</p>
+                <p>Sa: 09:00 - 14:00 Uhr</p>
+                <p>So: Geschlossen</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 AutoRent Rudolstadt. Alle Rechte vorbehalten.</p>
+        </div>
+    </footer>
+    <div class="cookie-banner" id="cookieBanner">
+        <div class="cookie-content">
+            <div class="cookie-text">
+                <h4><i class="fas fa-cookie-bite"></i> Cookie-Hinweis</h4>
+                <p>Wir verwenden Cookies, um Ihre Erfahrung zu verbessern und unseren Service zu optimieren. Durch die
+                    Nutzung unserer Website stimmen Sie der Verwendung von Cookies zu. <a href="/datenrichtlinie/"
+                        style="color: #c0c8d1; text-decoration: underline;">Mehr erfahren</a></p>
+            </div>
+            <div class="cookie-buttons">
+                <button class="cookie-btn cookie-accept" onclick="acceptCookies()"><i class="fas fa-check"></i> Alle
+                    akzeptieren</button>
+                <button class="cookie-btn cookie-decline" onclick="declineCookies()"><i class="fas fa-times"></i>
+                    Ablehnen</button>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script src="../js/script.js"></script>
+</body>
+
+</html>
